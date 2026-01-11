@@ -259,6 +259,31 @@ export default function Home() {
               {/* Background Glow */}
               <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/10 blur-[100px] rounded-full pointer-events-none" />
             </Card>
+            {/* Row 4: Buy Me a Coffee (Ultra Compact) */}
+            <Card className="md:col-span-3 p-4 flex items-center justify-between group overflow-hidden relative border-primary/10">
+              <div className="flex items-center gap-4 z-10">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center group-hover:border-primary/30 transition-colors">
+                    <span className="text-xl">☕</span>
+                  </div>
+                  <div>
+                    <h4 className="text-white font-bold text-sm">Caffeine for Creation</h4>
+                    <p className="text-zinc-500 text-[11px]">Your support fuels new tools & automation.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="/api/checkout?products=11c755e6-6325-4c99-8e8b-0af100db7f96"
+                className="group/coffee flex items-center gap-2 bg-white text-black px-4 py-2 rounded-xl font-bold hover:bg-primary hover:text-white transition-all duration-300 shadow-xl text-[11px] relative z-10"
+              >
+                Buy me a coffee
+                <ArrowRight size={14} className="group-hover/coffee:translate-x-1 transition-transform" />
+              </a>
+
+              {/* Background Glow */}
+              <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-primary/5 blur-[80px] rounded-full pointer-events-none" />
+            </Card>
           </div>
 
         </section>
