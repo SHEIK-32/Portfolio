@@ -5,5 +5,5 @@ export const GET = Checkout({
     successUrl: process.env.NEXT_PUBLIC_SUCCESS_URL,
     // We use "sandbox" for testing. 
     // Once you go live, you can change this to "production" or remove the line.
-    server: "sandbox",
+    server: "production",
 });
