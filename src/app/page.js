@@ -274,7 +274,7 @@ export default function Home() {
               </div>
 
               <a
-                href="/api/checkout?products=6636c93f-1e5f-43c5-9805-303067faf2b5"
+                href="https://buy.polar.sh/polar_cl_oBTlYSlsHEXZ82dMuVh8SJnxAiNSDfiPbnIAg3nFiTw"
                 className="group/coffee flex items-center gap-2 bg-white text-black px-4 py-2 rounded-xl font-bold hover:bg-primary hover:text-white transition-all duration-300 shadow-xl text-[11px] relative z-10"
               >
                 Buy me a coffee
