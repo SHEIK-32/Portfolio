@@ -9,6 +9,8 @@ import { FaLinkedinIn, FaGithub, FaReact, FaJs, FaPython, FaHtml5, FaCss3Alt } f
 import { FaXTwitter } from "react-icons/fa6";
 import { SiNextdotjs, SiTailwindcss, SiMongodb, SiResend, SiStripe, SiLemonsqueezy } from "react-icons/si";
 import SnapShowcase from "@/components/SnapShowcase";
+import TechIcon from "@/components/TechIcon";
+
 
 
 export default function Home() {
@@ -136,44 +138,86 @@ export default function Home() {
                     </svg>
                   </div>
                 </div>
-                <SiNextdotjs size={24} className="text-white" />
-                <SiMongodb size={24} className="text-green-500" />
-                <FaReact size={24} className="text-cyan-400" />
-                <FaPython size={28} className="text-blue-500" title="Python" />
+                <TechIcon name="Next.js">
+                  <SiNextdotjs size={24} className="text-white" />
+                </TechIcon>
+                <TechIcon name="MongoDB">
+                  <SiMongodb size={24} className="text-green-500" />
+                </TechIcon>
+                <TechIcon name="React">
+                  <FaReact size={24} className="text-cyan-400" />
+                </TechIcon>
+                <TechIcon name="Python">
+                  <FaPython size={28} className="text-blue-500" />
+                </TechIcon>
+
               </Card>
 
               {/* Main Tech Stack Card */}
               <Card className="min-h-[300px] flex flex-col justify-between">
                 <h3 className="text-zinc-500 text-sm uppercase tracking-wider mb-6">Arsenal</h3>
                 <div className="grid grid-cols-4 gap-y-8 gap-x-4 items-center justify-items-center">
-                  <FaJs size={28} className="text-yellow-400" title="JavaScript" />
-                  <FaReact size={28} className="text-cyan-400" title="React" />
-                  <SiNextdotjs size={28} className="text-white" title="Next.js" />
-                  <SiTailwindcss size={28} className="text-cyan-300" title="TailwindCSS" />
-                  <SiMongodb size={28} className="text-green-500" title="MongoDB" />
-                  <div className="relative w-7 h-7" title="daisyUI">
-                    <Image src="/icons/daisyui-icon.svg" alt="daisyUI" fill className="object-contain" />
-                  </div>
-                  <div className="relative w-7 h-7" title="AuthJS">
-                    <Image src="/icons/Auth_js.png" alt="Auth-JS" fill className="object-contain" />
-                  </div>
-                  <div className="relative w-7 h-7" title="Higgsfield AI">
-                    <Image src="/icons/higgsfield_logo.jpg" alt="Higgsfield AI" fill className="object-contain" />
-                  </div>
-                  <div className="relative w-7 h-7" title="fal.ai">
-                    <Image src="/icons/fal_ai.jpg" alt="fal.ai" fill className="object-contain" />
-                  </div>
-                  <div className="relative w-7 h-7" title="n8n">
-                    <Image src="/icons/n8n.png" alt="n8n" fill className="object-contain" />
-                  </div>
-                  <SiResend size={28} className="text-white" title="Resend" />
-                  <div className="relative w-7 h-7" title="node">
-                    <Image src="/icons/node_js.png" alt="node" fill className="object-contain" />
-                  </div>
-                  <SiLemonsqueezy size={28} className="text-yellow-500" title="LemonSqueezy" />
-                  <FaPython size={28} className="text-blue-500" title="Python" />
-                  <FaHtml5 size={28} className="text-orange-500" title="HTML5" />
-                  <FaCss3Alt size={28} className="text-blue-600" title="CSS3" />
+                  <TechIcon name="JavaScript">
+                    <FaJs size={28} className="text-yellow-400" />
+                  </TechIcon>
+                  <TechIcon name="React">
+                    <FaReact size={28} className="text-cyan-400" />
+                  </TechIcon>
+                  <TechIcon name="Next.js">
+                    <SiNextdotjs size={28} className="text-white" />
+                  </TechIcon>
+                  <TechIcon name="TailwindCSS">
+                    <SiTailwindcss size={28} className="text-cyan-300" />
+                  </TechIcon>
+                  <TechIcon name="MongoDB">
+                    <SiMongodb size={28} className="text-green-500" />
+                  </TechIcon>
+                  <TechIcon name="daisyUI">
+                    <div className="relative w-7 h-7">
+                      <Image src="/icons/daisyui-icon.svg" alt="daisyUI" fill className="object-contain" />
+                    </div>
+                  </TechIcon>
+                  <TechIcon name="Auth.js">
+                    <div className="relative w-7 h-7">
+                      <Image src="/icons/Auth_js.png" alt="Auth-JS" fill className="object-contain" />
+                    </div>
+                  </TechIcon>
+                  <TechIcon name="Higgsfield AI">
+                    <div className="relative w-7 h-7">
+                      <Image src="/icons/higgsfield_logo.jpg" alt="Higgsfield AI" fill className="object-contain" />
+                    </div>
+                  </TechIcon>
+                  <TechIcon name="fal.ai">
+                    <div className="relative w-7 h-7">
+                      <Image src="/icons/fal_ai.jpg" alt="fal.ai" fill className="object-contain" />
+                    </div>
+                  </TechIcon>
+                  <TechIcon name="n8n">
+                    <div className="relative w-7 h-7">
+                      <Image src="/icons/n8n.png" alt="n8n" fill className="object-contain" />
+                    </div>
+                  </TechIcon>
+                  <TechIcon name="Resend">
+                    <SiResend size={28} className="text-white" />
+                  </TechIcon>
+                  <TechIcon name="Node.js">
+                    <div className="relative w-7 h-7">
+                      <Image src="/icons/node_js.png" alt="node" fill className="object-contain" />
+                    </div>
+                  </TechIcon>
+                  <TechIcon name="LemonSqueezy">
+                    <SiLemonsqueezy size={28} className="text-yellow-500" />
+                  </TechIcon>
+                  <TechIcon name="Python">
+                    <FaPython size={28} className="text-blue-500" />
+                  </TechIcon>
+                  <TechIcon name="HTML5">
+                    <FaHtml5 size={28} className="text-orange-500" />
+                  </TechIcon>
+                  <TechIcon name="CSS3">
+                    <FaCss3Alt size={28} className="text-blue-600" />
+                  </TechIcon>
+
                 </div>
               </Card>
             </div>
